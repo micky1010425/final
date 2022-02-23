@@ -1,2 +1,303 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#FFFAFA	;
+}
+table, th, td {
+  border: 2px solid rgb(235, 198, 198);
+  border-radius: 20px;
+}
+th, td {<!-- 表格背景色-->
+  background-color: #FFFAFA;
+}
+th, td {
+  border-style: dotted;
+  border-color: #BC8F8F;
+}
+</style>
+<style>
+  body {
+    background-image: url('pic/back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+  </style>
+</head>
+
+<body>
+<title>liang,Ya-Chiao</title>
+<link rel="icon" href="pic/icon.jpg" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('pic/me1.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- 左邊那張大照片 -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- 右上角的菜單-->
+<nav class="w3-sidebar w3-white w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-#F08080" onclick="closeNav()">首頁</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-#F08080" onclick="closeNav()">關於我</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-#F08080" onclick="closeNav()">作品集</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-text-grey w3-#F08080" onclick="closeNav()">個人經歷</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-#F08080" onclick="closeNav()">聯絡資訊</a>
+  </div>
+</nav>
+
+<!-- 頁面內容 -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- 菜單的圖標 -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- 標題 -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>梁雅喬<br>Ya-Chiao,Liang</b></h1><!-- 名字輸入的位子 -->
+    <p>國北護-醫二二A.</p><!-- 名字下方文字輸入的位子 -->
+    <img src="pic/me1.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;"><!-- 左邊那張大照片 -->
+    <img src="pic/me1.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"><!-- 左邊那張大照片 -->
+   
+  </header>
+
+
+  <!-- "自我介紹"的部分-->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about"><!-- 設定文字大小顏色 -->
+    <h2>關於我</h2><!-- 標題輸入的位子 -->
+    <hr class="w3-opacity">
+    <p>你好，我是雅喬，目前就讀國北護醫教系，個性開朗樂觀，喜歡嘗試各種新事物，是一個不太容易生氣的人，喜歡冷靜思考每一件事，我認為人最好的溝通方式就是微笑，所以我時常將它掛在臉上，這樣也較容易和人親近。 
+       18歲開始打工，自己賺取生活費及學費，在牙科打工的過程中，學會細心負責、專心傾聽、有耐心，接著五專校外實習在屈臣氏學習，在店長及同事的教導下，學會在遇到突發狀況時能處理問題、表達能力、臨場反應、以及人際溝通的能力，這些對我來說是非常珍貴的經驗，讓我對未來進入社會做好準備。
+    </p><!-- 內文輸入的位子 -->
+      <!-- "學歷"的部分-->
+      <h3 class="w3-padding-16">學歷</h3><!-- 標題輸入的位子 -->
+      <p class="w3-wide">國立台北護理健康大學-醫護教育暨數位學習</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">2020/09-2022/06<br>就學中</div>
+      </div>
+    <p class="w3-wide">耕莘健康管理專科學校-化妝品應用與管理</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">2015/09-2020/06 <br>已畢業</div><!-- 顏色數字設定 -->
+    </div><br>
+     <h3 class="w3-text-grey">證照</h3>
+     <table style="width:100%">
+      <tr>
+        <th style="width:20%"><pre>                美容技術士</pre></th>
+        <th style="width:20%"><pre>                丙級</pre></th> 
+        <th style="width:60%"><pre>             <img src="pic/face.png" style="width:80%"></pre></th>
+      </tr>
+      <tr>
+        <th><pre>             女子美髮技術士</pre></th>
+        <td><pre>                丙級</pre></td>
+        <td><pre>             <img src="pic/hair.png" style="width:80%"></pre></td>
+      </tr>
+      <tr>
+        <th><pre>                化學技術士</pre></th>
+        <td><pre>                丙級</pre></td>
+        <td><pre>             <img src="pic/Chemical.png" style="width:80%"></pre></td>
+      </tr>
+      <tr>
+        <th><pre>BAP商務專業應用能力國際認證</pre></th>
+        <td><pre>               PPT</pre></td>
+        <td><pre>             <img src="pic/bap.png" style="width:80%"></pre></td>
+      </tr>
+    </table>
+ 
+    </div>
+
+    <!-- "工作經歷"的部分 -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="123" style="margin-bottom:64px">
+      <hr class="w3-opacity">
+      <h3>工作經歷</h3> 
+    <img src="pic/wastons.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">屈臣氏永和店</span> 顧客服務員   <small>2020/02-2021/09</small></p>
+    <p>結帳收銀、為顧客介紹適合的產品、解決顧客的疑問，學會人際溝通、解決問題、表達能力、臨場反應 </p>  
+    <img src="pic/teeth.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px"><!-- 照片 -->
+    <p><span class="w3-large w3-text-black w3-margin-right">華泰牙科</span> 牙醫助理    <small>2018/09-2020/01</small></p><!-- 文字設定及輸入 -->
+    <p>櫃台、協助醫生看診、灌齒模，學會細心負責、專心傾聽、有耐心</p><br><!-- 名字底下文字 -->
+   
+  <br>
+    
+    
+    <!-- 專長表格 -->
+    <h3 class="w3-padding-16">專長</h3><!-- 標題-->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">專業工具</li><!-- 左邊灰底方框 -->
+          <li class="w3-padding-16">Photoshop</li>
+          <li class="w3-padding-16">Active Presenter</li>
+          <li class="w3-padding-16">Premiere</li>
+          <li class="w3-padding-16">powtoon</li>
+          <li class="w3-padding-16">scratch</li>
+          <li class="w3-padding-16">vyond</li>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">文書工具</li><!-- 右邊黑底方框 -->
+          <li class="w3-padding-16">Word</li>
+          <li class="w3-padding-16">PowerPoint</li>
+          <li class="w3-padding-16">Excel</li>
+          <li class="w3-padding-16">Google Drive</li>
+          </li>
+        </ul>
+      </div>
+    <!-- 定價表表格結束 -->
+    </div>
+    
+  <!-- 自我介紹結束-->
+  <!-- 作品集格子-->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="portfolio" style="margin-bottom:64px">
+    <h2>作品集</h2>
+    <hr class="w3-opacity">
+    <table style="width:100%"><!-- 表格-->
+      <tr><!-- 使用youtube嵌入-->
+        <th style="width:50%"><iframe width="450" height="315" src="https://www.youtube-nocookie.com/embed/GJjyG-dI_o4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+        <th style="width:50%">POWTOON-入境防疫<br><br>使用powtoon製作"入境防疫"主題之影片</th> 
+      </tr>
+    
+      <tr>
+        <th><iframe width="450" height="315" src="https://www.youtube-nocookie.com/embed/uNBcplBArrA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+        <th>VR虛擬實境-彩虹眷村<br><br>使用VR相機拍攝虛擬實境，內容為有關彩虹眷村故事及路徑之教材</th>
+      </tr>
+    
+      <tr>
+        <th><img src="pic/chat.png" style="width:100%"></th>
+        <th>聊天機器人-腸胃炎<br><br>使用IBM Watson Assistant製作出讓民眾分辨自己是否得到"腸胃炎"，<br>以及了解腸胃炎相關內容。<br><br><a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=jp-tok&integrationID=a75d8e76-68d7-42d5-8734-e24cacfa293c&serviceInstanceID=8139b671-1c9d-46cc-8193-0d8cc474c760" target="_blank" class="w3-hover-text-green">作品連結</a></th>
+      </tr>
+    
+      <tr><!-- 插入照片-->
+        <th><img src="pic/site123.png" style="width:100%"></th></td>
+        <th>site123-網頁製作<br><br>使用site123為醫教系製作招生網站<br><br><a href="https://60acaa1a91728.site123.me/" target="_blank" class="w3-hover-text-green">作品連結</a></th>
+      </tr>
+
+      <tr>
+        <th><img src="pic/card.png" style="width:50%"></th></td>
+        <th>多媒體導論課程-名片製作<br><br>使用photoshop繪製自己的名片正反面，以自己的生肖、<br>喜歡的花、喜歡的色彩及幾何圖形為設計理念</th>
+      </tr>
+
+      <tr>
+        <th style="width:50%"><iframe width="450" height="315" src="https://www.youtube.com/embed/AmOha6TfrNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+        <th style="width:50%">bookwidget-教學影片1<br><br>製作bookwidget-Flash Cards的教學影片，2~5分鐘即可學習1個單元，<br>搭配字幕、旁白，讓觀賞者更清楚了解影片的重點。</th> 
+      </tr>
+
+      <tr>
+        <th style="width:50%"><iframe width="450" height="315" src="https://www.youtube.com/embed/USViI-ajzXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+        <th style="width:50%">bookwidget-教學影片2<br><br>製作bookwidget-QUIZ的教學影片，2~5分鐘即可學習1個單元，<br>搭配字幕、旁白，讓觀賞者更清楚了解影片的重點。</th> 
+      </tr>
+
+      <tr><!-- 嵌入scratch-->
+        <th style="width:50%"><iframe src="https://scratch.mit.edu/projects/436547116/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe></th>
+        <th style="width:50%">scratch<br><br>製作簡易小遊戲</th> 
+      </tr>
+      
+    </table>
+
+    <!-- 個人經歷 -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="experience" style="margin-bottom:64px">
+      <h2>個人經歷</h2>
+      <hr class="w3-opacity">
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="pic/queen.jpg" style="width:85%">
+        <img src="pic/an.png" style="width:80%">
+        
+      </div>
+
+      <div class="w3-half">
+      <img src="pic/cosmetic.png" style="width:85%">
+      <img src="pic/ahedl.jpg" style="width:80%">
+      </div>
+    </div>
+      
+  <!-- "聯絡方式"的部分 -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>聯絡資訊</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section"> <!-- 聯絡資訊的圖標跟文字 -->
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>國北護：台北市北投區明德路365號</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone：886-966211110</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email：micky1010425@mail.com</p>
+    </div>
+
+    
+   <!-- 輸入聯絡資訊 -->
+   <p>歡迎加我的LINE：</p>
+   <img src="pic/line.jpg" style="width:20%">
+    <p>也可直接傳送訊息，與我聯繫：</p>
+    <form name="submit-to-google-sheet"action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p><!-- 輸入格 -->
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <div id="form_alerts"></div>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> 送出訊息！<!-- 紙飛機圖標與文字 -->
+        </button>
+      </p>
+    </form>
+  <!-- 聯絡資訊的部分結束 -->
+  </div>  
+  
+  <!-- 頁腳，連結其他網站 -->
+  <p>其他網站</p>
+    <a href="https://www.facebook.com/yachiao.liang"><img src="pic/facebook.png" style="width: 70px;"></a>
+    <a href="https://www.instagram.com/yachiao_1101/"><img src="pic/instagram.png" style="width: 70px;"></a>
+     
+  <!-- 頁腳結束 -->
+  
+ 
+  
+<!-- 頁面內容結束 -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Open and close sidebar
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxjF_pfgbt2qUZfI28pH6cGnWkIhIrU_Z1lGvmv8ONxeHlgIRPbWBoc29fQMbA3jlwZ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => $("#form_alerts").html("<div class='alert alert-success'>已收到您的訊息!</div>"))
+    .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>無法傳送您的訊息!</div>"))
+  })
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
